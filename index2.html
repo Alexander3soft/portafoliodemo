@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Diplomas</title>
+    <link rel="icon" href="logo sofware 1.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #121a22;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .diploma {
+            flex: 1 1 30%;
+            margin: 10px;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            cursor: pointer; /* Cambia el cursor al pasar el mouse */
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+        }
+
+        /* Estilos para la ventana modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            max-width: 90%;
+            max-height: 80%;
+        }
+
+   
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mis Diplomas</h1>
+    <p>Bienvenido a mi página de logros académicos</p>
+</header>
+
+<div class="container">
+    <h2>Galería de Diplomas</h2>
+    <div class="gallery">
+        <div class="diploma">
+            <img src="1.png" alt="Diploma 1" onclick="showModal(this.src)">
+            <p>Ingles Báscio - Capucom y Fundeso.</p>
+        </div>
+        <div class="diploma">
+            <img src="2.png" alt="Diploma 2" onclick="showModal(this.src)">
+            <p>Introducción a la IA - Capucom y Fundeso</p>
+        </div>
+        <div class="diploma">
+            <img src="3.png" alt="Diploma 3" onclick="showModal(this.src)">
+            <p>Microsoft Excel Intermedio - Capucom y Fundeso</p>
+        </div>
+        <div class="diploma">
+            <img src="4.png" alt="Diploma 3" onclick="showModal(this.src)">
+            <p>Administración de Redes Sociales - Capucom y Fundeso</p>
+        </div>
+        <div class="diploma">
+            <img src="5.png" alt="Diploma 3" onclick="showModal(this.src)">
+            <p>Administración de Tecnología y Sistemas de Información - Capucom y Fundeso</p>
+        </div>
+        <div class="diploma">
+            <img src="6.png" alt="Diploma 3" onclick="showModal(this.src)">
+            <p>Markething Digital - Capucom y Fundeso</p>
+        </div>
+        <div class="diploma">
+            <img src="7.png" alt="Diploma 3" onclick="showModal(this.src)">
+            <p>Participacion en Feria - CIMAT</p>
+        </div>
+        <div class="diploma">
+            <img src="8.png" alt="Diploma 3" onclick="showModal(this.src)">
+            <p>The dour of Code - Juego de Logíca</p>
+        </div>
+        <div class="diploma">
+            <img src="9.png" alt="Diploma 3" onclick="showModal(this.src)">
+            <p>Introducción al Desarrollo Web - Google Activate</p>
+        </div>
+        <div class="diploma">
+            <img src="10.png" alt="Diploma 3" onclick="showModal(this.src)">
+            <p>Participación en feria CIMAT - Instituto Nacional de San Miguel Tepezontes</p>
+        </div>
+        <div class="diploma">
+            <img src="11.png" alt="Diploma 3" onclick="showModal(this.src)">
+            <p>Robotica con Arduino - Instituto Nacional de San Miguel Tepezontes</p>
+        </div>
+        <div class="diploma">
+            <img src="12.png" alt="Diploma 3" onclick="showModal(this.src)">
+            <p>Desarrollo de Contenido de Aprendoizaje - Capacitate para el Empleo</p>
+        </div>
+        
+    </div>
+</div>
+
+
+<div id="modal" class="modal" onclick="closeModal()">
+    <img class="modal-content" id="modalImg">
+</div>
+
+<footer>
+    <p>Contacto: alexandermarmol828@gmail.com</p>
+</footer>
+
+<script>
+    function showModal(src) {
+        const modal = document.getElementById("modal");
+        const modalImg = document.getElementById("modalImg");
+        modal.style.display = "flex"; // Cambia a 'flex' para centrar el contenido
+        modalImg.src = src;
+    }
+
+    function closeModal() {
+        const modal = document.getElementById("modal");
+        modal.style.display = "none";
+    }
+
+    
+
+</script>
+
+</body>
+</html>

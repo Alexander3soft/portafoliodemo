@@ -1,0 +1,279 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+#sobre-mi {
+    background-color: #e0f7fa; /* Fondo claro y fresco */
+    text-align: center; /* Centra el texto */
+    padding: 40px 20px; /* Espaciado interno */
+    margin: 20px auto; /* Margen automático para centrar la sección */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 900px; /* Ancho máximo */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.foto-container {
+    display: flex; /* Usamos flexbox para centrar la imagen */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.mi-imagen {
+    width: 185px; /* Ancho fijo */
+    height: 190px; /* Altura fija */
+    border-radius: 50%; /* Imagen circular */
+    border: 4px solid #007BFF; /* Borde colorido */
+}
+
+.contenido {
+    display: flex; /* Usamos flexbox para disposición de tarjetas */
+    justify-content: space-between; /* Espacio entre tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten a la siguiente línea */
+}
+
+.tarjeta {
+    background-color: #ffffff; /* Fondo blanco para las tarjetas */
+    padding: 20px; /* Espacio interno de las tarjetas */
+    border-radius: 10px; /* Bordes redondeados en las tarjetas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transición suave */
+    width: calc(30% - 20px); /* Ancho de las tarjetas (3 por fila) */
+    margin: 10px; /* Margen entre tarjetas */
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px); /* Efecto al pasar el ratón */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al hover */
+}
+
+h2 {
+    font-size: 2.5em; /* Tamaño de fuente más grande */
+    color: #007BFF; /* Color del texto */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+h3 {
+    color: #007BFF; /* Color para los subtítulos */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+.btn-download {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #28a745; /* Color verde */
+    color: white;
+    text-decoration: none;
+    border: 2px solid #28a745; /* Borde del mismo color */
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-download:hover {
+    background-color: white; /* Color de fondo en hover */
+    color: #28a745; /* Color de texto en hover */
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#inicio {
+    background: linear-gradient(135deg, #4c5e70, #5b8591); /* Fondo con gradiente */
+    color: white; /* Color de texto blanco */
+    text-align: center; /* Centra el texto */
+    padding: 60px 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin: 20px auto; /* Margen automático para centrar la sección */
+    max-width: 800px; /* Ancho máximo */
+}
+
+h2 {
+    font-size: 2.5em; /* Tamaño de fuente más grande */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+p {
+    font-size: 1.2em; /* Tamaño de fuente para el párrafo */
+    margin-bottom: 30px; /* Espacio inferior */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+.btn {
+    background-color: #FF5722; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 15px 30px; /* Espaciado interno del botón */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    transition: background-color 0.3s ease; /* Transición suave */
+    font-size: 1.1em; /* Tamaño de fuente del botón */
+}
+
+.btn:hover {
+    background-color: #E64A19; /* Color al pasar el ratón */
+}
+/* Estilo para la sección de proyectos */
+#proyectos {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Estilo del título */
+#proyectos h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#proyectos h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #e91e63;
+    margin: 10px auto 0;
+}
+
+/* Estilo de la galería */
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Estilo de las tarjetas */
+.tarjeta {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    text-align: left;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de las imágenes */
+.tarjeta img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo de los títulos de las tarjetas */
+.tarjeta h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 15px 0;
+}
+
+/* Estilo de las descripciones */
+.tarjeta p {
+    font-size: 1em;
+    color: #666;
+    padding: 0 15px 15px;
+}
+
+/* Estilo de los enlaces */
+.tarjeta a {
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 20px;
+    background-color: #e91e63;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.tarjeta a:hover {
+    background-color: #d81b60;
+}
+
+.imagen-certificado {
+    max-width: 100%; 
+    height: auto; /* Mantiene la proporción de la imagen */
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+    transition: transform 0.3s ease; /* Transición suave para el efecto de zoom */
+}
+
+.imagen-certificado:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen al pasar el puntero */
+}
+
+.redes-sociales a {
+    margin: 0 10px;
+}

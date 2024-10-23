@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="icon" href="logo sofware 1.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+<body>
+    <header>
+        <h1>Mario Alexander Díaz Mármol</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h2>Bienvenido a mi portafolio</h2>
+        <p>Soy un Tecnico en Desarrollo de Software especializado en el desarrollo de diferentes componentes de softeare.</p>
+        <a href="#proyectos" class="btn">Ver Proyectos</a>
+       
+    </section>
+
+    <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <img src="mi-foto.jpeg" alt="Foto profesional" class="mi-imagen" width="190" height="190">
+        <div class="contenido">
+            <div class="tarjeta">
+                <h3>Introducción</h3>
+                <p>Soy un estudiante técnico en desarrollo de software apasionado por la creación de soluciones innovadoras a través de la tecnología. Actualmente, estoy adquiriendo una sólida formación en programación, diseño de aplicaciones y desarrollo web.</p>
+            </div>
+    
+            <div class="tarjeta">
+                <h3>Habilidades Técnicas</h3>
+                <p>A lo largo de mi formación, he adquirido habilidades en lenguajes como Java, Python y JavaScript, así como en frameworks modernos como React y Node.js. Tengo un interés particular en bases de datos, especialmente con MySQL y WordPress.</p>
+            </div>
+    
+            <div class="tarjeta">
+                <h3>Experiencia</h3>
+                <p>Mi experiencia con Linux me ha permitido comprender mejor la infraestructura detrás del desarrollo y la implementación de aplicaciones. Utilizo GitHub para gestionar proyectos y colaborar con otros desarrolladores.</p>
+            </div>
+    
+            <div class="tarjeta">
+                <h3>Trabajo en Equipo</h3>
+                <p>Disfruto del trabajo en equipo y la colaboración en entornos ágiles, aprendiendo de mis compañeros y contribuyendo con mis ideas. Estoy comprometido con el aprendizaje continuo.</p>
+            </div>
+    
+            <div class="tarjeta">
+                <h3>Objetivo Profesional</h3>
+                <p>Mi objetivo es aplicar mis conocimientos en desarrollo de software para resolver problemas reales y mejorar la experiencia del usuario. Estoy emocionado por las oportunidades que el futuro me depara.</p>
+            </div>
+        </div>
+
+        <section>
+           
+        </section>
+        
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="galeria">
+            <div class="tarjeta">
+                <img src="matematica.jpg" alt="Proyecto 1">
+                <h3>Mathematical game</h3>
+                <p>Es un juego de matemáticas que inolucra la progrmacion en C++ y ayuda alas practicas de esta materia en
+                    niños y algunos jovenes que tienen problemas a la hora de resolver problemas de matemáticas.</p>
+                <a href="https://youtu.be/sELYw22igKg?si=5-PS9F0lw22Klclt">Más Información</a>
+            </div>
+            <div class="tarjeta">
+                <img src="gramatica.jpg" alt="Proyecto 2">
+                <h3>PPG</h3>
+                <p>Poniendo en Practica la gramática es una plataforma que ayuda a las personas a mejorar sus habilidades en la gramática 
+                    para poder tener una mejor escritura .</p>
+                <a href="">Más Información</a>
+            </div>
+
+            <div class="tarjeta">
+                <img src="RV.jpg" alt="Proyecto 3">
+                <h3> Neuro Space</h3>
+                <p>Neuro Space es un juego de realidad virtual que tiene como objetivo ayudar los problemas de la
+                    salud metal como lo es la depresión.</p>
+                <a href="https://youtu.be/njzdcUVkUQk?si=jg5Jo2k4qQmZi-HQ">Más Información</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="certificados">
+        <h2>🎓 Certificados Destacados</h2>
+        <div class="certificado-container">
+            <div class="certificado">
+                <a href="javascript:void(0);" class="certificado-link" onclick="mostrarModal('linux.jpg')">
+                    <img src="linux.jpg" alt="Certificado de [Nombre del Curso]" class="imagen-certificado" />
+                </a>
+            </div>
+            <div class="certificado">
+                <a href="javascript:void(0);" class="certificado-link" onclick="mostrarModal('git.jpg')">
+                    <img src="git.jpg" alt="Certificado de [Nombre del Curso]" class="imagen-certificado" />
+                </a>
+            </div>
+            <div class="certificado">
+                <a href="javascript:void(0);" class="certificado-link" onclick="mostrarModal('impresion.jpg')">
+                    <img src="impresion.jpg" alt="Certificado de [Nombre del Curso]" class="imagen-certificado" />
+                </a>
+            </div>
+        </div>
+    
+        <!-- Modal para imagen grande -->
+        <div id="modal" class="modal" onclick="cerrarModal()">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <img class="modal-content" id="img01" />
+        </div>
+    </section>
+    
+    <style>
+        .certificado-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; /* Para espaciar las imágenes */
+        }
+        .certificado {
+            flex: 0 1 calc(33.33% - 10px); /* 3 imágenes por fila con margen */
+            margin: 10px; /* Espaciado entre imágenes */
+            box-sizing: border-box; /* Asegura que el padding y margen no afecten el tamaño */
+        }
+        .imagen-certificado {
+            max-width: 100%; /* Asegura que la imagen no exceda el contenedor */
+            height: auto; /* Mantiene la proporción de la imagen */
+            cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+        }
+        .modal {
+            display: none; /* Oculto por defecto */
+            position: fixed; /* Fijo a la ventana */
+            z-index: 1; /* Sobre los demás elementos */
+            left: 0;
+            top: 0;
+            width: 100%; /* Ancho completo */
+            height: 100%; /* Alto completo */
+            overflow: auto; /* Permitir desplazamiento si es necesario */
+            background-color: rgba(133, 125, 125, 0.9); /* Fondo negro con transparencia */
+            display: flex; /* Usar flex para centrar */
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center; /* Centrar verticalmente */
+        }
+        .modal-content {
+            max-width: 80%; /* Ancho máximo de la imagen */
+            max-height: 80%; /* Alto máximo de la imagen */
+        }
+        .cerrar {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: rgb(31, 19, 19);
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+    
+    <script>
+        function mostrarModal(imagenSrc) {
+            var modal = document.getElementById("modal");
+            var img = document.getElementById("img01");
+            img.src = imagenSrc;
+            modal.style.display = "flex"; // Cambia a 'flex' para centrar
+        }
+    
+        function cerrarModal() {
+            var modal = document.getElementById("modal");
+            modal.style.display = "none";
+        }
+    </script>
+    
+    <style>
+        .boton {
+            padding: 10px 20px;
+            background-color: #4CAF50; /* Verde */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .boton:hover {
+            background-color: #45a049; /* Verde más oscuro */
+        }
+
+        .imagen-certificado:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen al pasar el puntero */
+}
+
+        </style>
+        
+        <a href="file:///C:/Users/Alexander/Desktop/portafolio/index2.html" class="boton">Ver Todos Mis Diplomas</a>
+        
+
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="contact-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="redes-sociales">
+            <a href="https://github.com/dashboard">GitHub</a>
+            <a href="tu-twitter">Twitter</a>
+            <a href="https://www.instagram.com/alxndr02024?igsh=YzljYTk1ODg3Zg==">Instagram</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Alexander Díaz. Todos los derechos reservados.</p>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
